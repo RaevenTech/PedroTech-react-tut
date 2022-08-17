@@ -1,4 +1,5 @@
 import "./App.css";
+import ToDo from "./components/CRUD/ToDo";
 import Jobs from "./components/Jobs";
 import Planets from "./components/Planets";
 import State from "./components/State";
@@ -14,6 +15,8 @@ function App() {
             <Planets />
             <hr />
             <State />
+            <hr />
+            <ToDo />
         </div>
     );
 }
