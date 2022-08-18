@@ -11,21 +11,24 @@ const Planets = () => {
     ];
 
     return (
-        <div>
-            {planets.map((planet, i) => (
-                <div key={i}>
-                    <div>
-                        {planet.isGasPlanet ? (
-                            <h1>{planet.name}</h1>
-                        ) : (
-                            !planet.isGasPlanet
-                        )}
-                    </div>
+        <>
+            <div>Planets Conditional rendering</div>
+            <div>
+                {planets.map((planet, i) => (
+                    <div key={i}>
+                        <div>
+                            {planet.isGasPlanet ? (
+                                <h1>{planet.name}</h1>
+                            ) : (
+                                !planet.isGasPlanet
+                            )}
+                        </div>
 
-                    {/*----- {planets.map((planet, i) => planet.isGasPlanet && <h1>{planet.name}</h1>)} ---- */}
-                </div>
-            ))}
-        </div>
+                        {/*----- {planets.map((planet, i) => planet.isGasPlanet && <h1>{planet.name}</h1>)} ---- */}
+                    </div>
+                ))}
+            </div>
+        </>
     );
 };
 
